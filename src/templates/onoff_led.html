@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+{% block title %}On Off led{% endblock %}
+
+{% block content_body %}
+<form action="{{url_for('onoffled')}}" method="POST">
+<input type="radio" name="transporte" value="0">OFF
+<input type="radio" name="transporte" value="1">ON
+<input class="bg-success" type="submit" value="Enviar">
+</form>
+{% endblock %}
